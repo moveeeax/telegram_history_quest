@@ -1,0 +1,8 @@
+Текст: Иван комментирует всеобщую повинность 1874. "Мои стрельцы были элитой!" Реформа ввела...
+
+Image: https://cdn.britannica.com/99/148799-050-4F029F7F/Alexander-II-woodcut.jpg
+
+Buttons:
+Всеобщую повинность: final
+Элитные опричники: wrong_military
+Продолжить: final

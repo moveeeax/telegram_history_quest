@@ -1,0 +1,8 @@
+Текст: Иван видит крестьянские бунты после Манифеста 1861. "Мои черносошные крестьяне были свободнее!" Что ввела реформа? (Факт: Освобождение от крепостного права, но с выкупными платежами до 1905.)
+
+Image: https://upload.wikimedia.org/wikipedia/commons/1/16/Reading_of_the_Manifest_%28Liberation_of_peasants%29_-_Kustodiev%2C_1907.jpg
+
+Buttons:
+Освобождение крестьян с землёй: zemstvo
+Опричнина для подавления: wrong_peasant
+Продолжить: zemstvo

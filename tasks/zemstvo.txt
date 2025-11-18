@@ -1,0 +1,8 @@
+Текст: Иван в земском собрании 1864. "Что за гласные? В моей Избранной раде было проще!" Задача: Земства занимались...
+
+Image: https://upload.wikimedia.org/wikipedia/commons/7/7c/Grigorij_Grigorjewitsch_Mjassojedow_001.jpg
+
+Buttons:
+Местным самоуправлением: judicial
+Централизацией как опричнина: wrong_zemstvo
+Продолжить: judicial

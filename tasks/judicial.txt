@@ -1,0 +1,8 @@
+Текст: Сцена суда. Иван вспоминает свой Судебник. "Присяжные? Открытость? В мое время — пытки!" Что ввела реформа 1864?
+
+Image: https://attachments.academia-assets.com/markdown/53953188/img-2.jpeg
+
+Buttons:
+Присяжных и гласность: military
+Террор опричнины: wrong_judicial
+Продолжить: military
