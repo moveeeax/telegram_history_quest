@@ -1,0 +1,8 @@
+Текст: Попробуй объяснить советнику, какие основные причины побудили Александра II провести Великие реформы?
+
+Image: https://upload.wikimedia.org/wikipedia/commons/1/16/Reading_of_the_Manifest_%28Liberation_of_peasants%29_-_Kustodiev%2C_1907.jpg
+
+Buttons:
+Поражение в Крымской войне: perepis
+Кавказская война: wrong_reforms
+Продолжить: perepis
