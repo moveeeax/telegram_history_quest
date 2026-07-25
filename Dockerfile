@@ -1,6 +1,11 @@
 # Используем официальный образ Python 3.11
 FROM python:3.11-slim
 
+# Логи должны сразу уходить в docker logs, а не залипать в буфере —
+# stdout это единственный канал наблюдения за ботом.
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1
+
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
@@ -10,12 +15,12 @@ COPY requirements.txt .
 # Устанавливаем зависимости Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем исходный код проекта
-COPY . .
-
-# Создаем пользователя для безопасности
+# Создаём непривилегированного пользователя до копирования кода
 RUN useradd --create-home --shell /bin/bash bot
-RUN chown -R bot:bot /app
+
+# Копируем исходный код проекта (что не попадёт в образ — см. .dockerignore)
+COPY --chown=bot:bot . .
+
 USER bot
 
 # Запускаем бота

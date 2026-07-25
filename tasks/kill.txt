@@ -4,6 +4,6 @@
 Image: https://www.culture.ru/s/vopros/kartina-groznyi/images/tild3535-3362-4365-b237-656566353361__1477639930195688917.jpg
 
 Buttons:
-Убийство собственного сына, царевича Ивана, в 1581 году: final
+Убийство собственного сына, царевича Ивана, в 1581 году: peasant
 Смерть его жен: wrong_kill
-Продолжить: final
+Продолжить: peasant

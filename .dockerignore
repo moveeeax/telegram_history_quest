@@ -1,0 +1,24 @@
+# Dockerfile делает `COPY . .`, поэтому без этого файла .env с токеном бота
+# попадал бы в слой образа и уезжал вместе с ним в любой registry.
+.env
+.env.*
+*.env
+
+.git
+.gitignore
+.github
+.dockerignore
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+logs/
+tests/
+pytest.ini
+requirements-dev.txt
+Dockerfile
+docker-compose.yml
+README.md

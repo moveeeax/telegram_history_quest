@@ -1,18 +1,14 @@
-version: '3.8'
-
 services:
   history-quest-bot:
     build: .
     container_name: history_quest_bot
     restart: unless-stopped
-    environment:
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
-      - TASKS_DIR=tasks/
+    # Токен берётся только из .env и не дублируется в environment,
+    # чтобы не попасть в вывод `docker compose config`.
     env_file:
       - .env
-    volumes:
-      # Опционально: можно добавить монтирование для логов
-      - ./logs:/app/logs
+    environment:
+      - TASKS_DIR=tasks
     healthcheck:
       test: ["CMD", "python", "-c", "import os; exit(0 if os.getenv('TELEGRAM_BOT_TOKEN') else 1)"]
       interval: 30s
