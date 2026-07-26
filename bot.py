@@ -116,7 +116,12 @@ def parse_task(lines):
             image = line.split(':', 1)[1].strip()
         elif line.startswith('Buttons:'):
             section = 'buttons'
-        elif section == 'text':
+        elif section == 'text' and line:
+            # Пустая строка внутри секции "Текст:" — это просто разделитель
+            # абзацев в исходном файле, а не часть текста. Раньше она тоже
+            # склеивалась через ' ' + '', и между абзацами накапливались
+            # лишние пробелы (в реальных заданиях с несколькими абзацами —
+            # почти в каждом файле tasks/).
             text += ' ' + line
         elif section == 'buttons' and line:
             if ':' not in line:

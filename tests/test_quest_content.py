@@ -48,6 +48,15 @@ def test_stage_has_text_and_image(name):
 
 
 @pytest.mark.parametrize('name', sorted(STAGES))
+def test_stage_text_has_no_doubled_whitespace(name):
+    """Пустая строка между абзацами в файле раньше склеивалась в лишний пробел
+    (см. bot_module.parse_task) — эта регрессия видна только на реальных
+    многоабзацных файлах, где такие пустые строки действительно есть."""
+    text = STAGES[name][0]
+    assert '  ' not in text, f'{name}.txt: в тексте задвоенные пробелы между абзацами'
+
+
+@pytest.mark.parametrize('name', sorted(STAGES))
 def test_stage_caption_fits_telegram_limit(name):
     text = STAGES[name][0]
     assert len(text) <= bot_module.MAX_CAPTION_LEN, (
