@@ -255,7 +255,7 @@ def _build_dispatch_bot(tmp_path, monkeypatch, answer_should_raise=False):
     )
     monkeypatch.setattr(bot_module, 'TASKS_DIR', str(directory))
 
-    built = bot_module.build_bot('fake-token')
+    built = bot_module.build_bot('123456:fake-token')
     fake = RecordingBot(answer_should_raise=answer_should_raise)
     built.send_message = fake.send_message
     built.send_photo = fake.send_photo
