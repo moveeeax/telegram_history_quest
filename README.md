@@ -118,3 +118,7 @@ intro → reforms → perepis → kill → peasant → zemstvo → judicial → 
 Автор: [Ваше имя]
 
 Дата: 17 ноября 2025
+
+---
+
+**Archived on 2026-11-05.** finished coursework (NETI history assignment, Nov 2025): one linear 9-stage quiz quest in a 262-line pyTelegramBotAPI bot. Branching-story engines already cover the generic use, and Tuesday JS even exports to a Telegram bot. Keep it only if the owner wants to turn it into a reusable "quiz quest from text files" bot for teachers; the features below are for that case.
